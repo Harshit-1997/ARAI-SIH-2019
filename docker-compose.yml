@@ -4,7 +4,7 @@ services:
   ui:
     build: .
     volumes:
-    - ".:/ARAI/src"
-    - "/tmp/.X11-unix:/tmp/.X11-unix"
+    - .:/ARAI/src
+    - $VOLUME
     environment:
-      - DISPLAY=:0
+      - DISPLAY=$DISP
