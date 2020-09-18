@@ -7,4 +7,4 @@ services:
     - .:/ARAI/src
     - $VOLUME
     environment:
-      - DISPLAY=$DISP
+      - DISPLAY=$XSERVER
